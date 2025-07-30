@@ -2,10 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Helloworld</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <section class="top top_index center">
+        <div class="top__star-box">
+            <img class="top__star top__star-side" src="img/sidestar.svg" alt="star on the side" >
+            <img class="top__star top__star-empty-big" src="img/staremptybig.svg" alt="star empty big" >
+            <img class="top__star top__star-green-big" src="img/stargreenbig.svg" alt="star green" >
+            <img class="top__star top__star-empty" src="img/starempty.svg" alt="star empty" >
+            <img class="top__star top__star-green" src="img/stargreen.svg" alt="star green" >
+        </div>
+        <h1 class="top__title">Добро пожаловать</h1>
+        <h1 class="top__title">на мой сайт мини-игр</h1>
+        <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span style="font-weight: bold;">«Поехали!»</span> и <span style="font-weight: bold;">приступай.</span></p>
+        <a href="#aboutgame" class="button">Поехали!</a>
+    </section>
+
+    <section class="product-box center" id="aboutgame">
+        <div class="product-box__star-box">
+            <img class="product-box__star" src="img/star.svg" alt="star">
+            <img class="product-box__star-small" src="img/starsmall.svg" alt="small star">
+        </div>
+        <h2 class="title">Об играх</h2>
+        <p class="text">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.</p>
+        <p class="text">Все игры доступны для пользования.</p>
+            <div class="product-box__content">
+                <a class="product" href="#game1">
+                    <img src="img/game1.jpeg" alt="game1">
+                    <div class="product-box__bottom">
+                        <p class="product__text">Игра №1</p>
+                        <h4 class="product__title">Угадай число</h4>
+                    </div>
+                </a>
+
+                <a class="product" href="#game2"> 
+                    <img src="img/game2.jpeg" alt="game2">
+                    <div class="product-box__bottom">
+                        <p class="product__text">Игра №2</p>
+                        <h4 class="product__title product__title_high">Простая арифметика</h4>
+                    </div>
+                </a>
+
+                <a class="product" href="#game3"> 
+                    <img src="img/game3.jpeg" alt="game3">
+                    <div class="product-box__bottom">
+                        <p class="product__text">Игра №3</p>
+                        <h4 class="product__title product__title_high">Переверни текст</h4>
+                    </div>
+                </a>
+
+                <a class="product" href="#game4"> 
+                    <img src="img/game4.jpeg" alt="game4">
+                    <div class="product-box__bottom">
+                        <p class="product__text">Игра №4</p>
+                        <h4 class="product__title product__title_high">Камень, ножницы, бумага</h4>
+                    </div>
+                </a>
+
+                <a class="product" href="#game5"> 
+                    <img src="img/game5.jpeg" alt="game5">
+                    <div class="product-box__bottom">
+                        <p class="product__text">Игра №5</p>
+                        <h4 class="product__title product__title_high">Простая викторина</h4>
+                    </div>
+                </a>
+
+                <a class="product" href="#game6"> 
+                    <img src="img/game6.jpeg" alt="game6">
+                    <div class="product-box__bottom">
+                        <p class="product__text">Игра №6</p>
+                        <h4 class="product__title product__title_high">Генератор случайных цветов</h4>
+                    </div>
+                </a>
+            </div>
+    </section>
+
+    <section class="game center">
+        <div class="game__star-box">
+            <img class="game__star-top-big" src="img/startopbig.svg" alt="star">
+            <img class="game__star-top" src="img/startop.svg" alt="small star">
+            <img class="game__star-bottom-big" src="img/starbottombig.svg" alt="star">
+            <img class="game__star-bottom" src="img/starbottom.svg" alt="small star">
+        </div>
+        <h2 class="title">Мини-игры</h2>
+        <div class="game__content">
+            <div class="game__cart">
+                <div class="game__info" id="game1">
+                    <h3 class="game__info-title">Угадай число</h3>
+                    <p class="game__info-text game__info-text_width">Попробуй угадать случайное число от 1 до 100.</p>
+                    <button class="button game-button">Играть!</button>
+                </div>
+                <div class="game__img">
+                    <img src="img/gamebig1.jpeg" alt="game 1">
+                </div>
+            </div>
+                
+            <div class="game__cart">
+                    <img src="img/gamebig2.jpeg" alt="game2">
+                <div class="game__info" id="game2">
+                    <h3 class="game__info-title">Простая арифметика</h3>
+                    <p class="game__info-text game__info-text_width">Попробуй решить простые арифметические задачи.</p>
+                    <button class="button game-button">Играть!</button>
+                </div>
+            </div>
+
+            <div class="game__cart">
+                <div class="game__info" id="game3">
+                    <h3 class="game__info-title">Переверни текст</h3>
+                    <p class="game__info-text game__info-text_width">Попробуй ввести текст, который будет перевернут.</p>
+                    <button class="button game-button">Играть!</button>
+                </div>
+                <div class="game__img">
+                    <img src="img/gamebig3.jpeg" alt="game3">
+                </div>
+            </div>
+
+            <div class="game__cart">
+                <div class="game__img">
+                    <img src="img/gamebig4.jpeg" alt="game4">
+                </div>
+                <div class="game__info" id="game4">
+                    <h3 class="game__info-title game__info-title_normal">Камень, ножницы, бумага</h3>
+                    <p class="game__info-text game__info-text_width">Сыграй в популярную игру против компьютера.</p>
+                    <button class="button game-button">Играть!</button>
+                </div>
+            </div>
+
+            <div class="game__cart">
+                <div class="game__info" id="game5">
+                    <h3 class="game__info-title">Простая викторина</h3>
+                    <p class="game__info-text game__info-text_width">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <button class="button game-button">Играть!</button>
+                </div>
+                <div class="game__img">
+                    <img src="img/gamebig5.jpeg" alt="game5">
+                </div>
+            </div>
+
+            <div class="game__cart">
+                <div class="game__img">
+                    <img src="img/gamebig6.jpeg" alt="game6">
+                </div>
+                <div class="game__info" id="game6">
+                    <h3 class="game__info-title game__info-title_normal">Генератор случайных цветов</h3>
+                    <p class="game__info-text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <button class="button">Играть!</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>    
 </body>
 </html>
