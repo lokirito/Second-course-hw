@@ -14,31 +14,23 @@
 
 <body>
     <section class="top top_index center">
-        <div class="top__star-box">
-            <img class="top__star top__star-side" src="img/sidestar.svg" alt="star on the side" >
-            <img class="top__star top__star-empty-big" src="img/staremptybig.svg" alt="star empty big" >
-            <img class="top__star top__star-green-big" src="img/stargreenbig.svg" alt="star green" >
-            <img class="top__star top__star-empty" src="img/starempty.svg" alt="star empty" >
-            <img class="top__star top__star-green" src="img/stargreen.svg" alt="star green" >
-        </div>
         <h1 class="top__title">Добро пожаловать</h1>
         <h1 class="top__title">на мой сайт мини-игр</h1>
         <p class="top__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span style="font-weight: bold;">«Поехали!»</span> и <span style="font-weight: bold;">приступай.</span></p>
-        <a href="#aboutgame" class="button">Поехали!</a>
+        <div class="button-box">
+            <a href="#aboutgame" class="button">Поехали!</a>
+        </div>
     </section>
 
     <section class="product-box center" id="aboutgame">
-        <div class="product-box__star-box">
-            <img class="product-box__star" src="img/star.svg" alt="star">
-            <img class="product-box__star-small" src="img/starsmall.svg" alt="small star">
-        </div>
         <h2 class="title">Об играх</h2>
-        <p class="text">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.</p>
+        <p class="text">В моей коллекции представлено 6 игр на разные темы.</p>
+        <p class="text">Игры несложные — в них может поиграть каждый.</p>
         <p class="text">Все игры доступны для пользования.</p>
             <div class="product-box__content">
                 <a class="product" href="#game1">
                     <img src="img/game1.jpeg" alt="game1">
-                    <div class="product-box__bottom">
+                    <div class="product-box__bottom product-box__bottom_white">
                         <p class="product__text">Игра №1</p>
                         <h4 class="product__title">Угадай число</h4>
                     </div>
@@ -54,7 +46,7 @@
 
                 <a class="product" href="#game3"> 
                     <img src="img/game3.jpeg" alt="game3">
-                    <div class="product-box__bottom">
+                    <div class="product-box__bottom product-box__bottom_white">
                         <p class="product__text">Игра №3</p>
                         <h4 class="product__title product__title_high">Переверни текст</h4>
                     </div>
@@ -70,7 +62,7 @@
 
                 <a class="product" href="#game5"> 
                     <img src="img/game5.jpeg" alt="game5">
-                    <div class="product-box__bottom">
+                    <div class="product-box__bottom product-box__bottom_white">
                         <p class="product__text">Игра №5</p>
                         <h4 class="product__title product__title_high">Простая викторина</h4>
                     </div>
@@ -87,12 +79,6 @@
     </section>
 
     <section class="game center">
-        <div class="game__star-box">
-            <img class="game__star-top-big" src="img/startopbig.svg" alt="star">
-            <img class="game__star-top" src="img/startop.svg" alt="small star">
-            <img class="game__star-bottom-big" src="img/starbottombig.svg" alt="star">
-            <img class="game__star-bottom" src="img/starbottom.svg" alt="small star">
-        </div>
         <h2 class="title">Мини-игры</h2>
         <div class="game__content">
             <div class="game__cart">
@@ -102,12 +88,22 @@
                     <button class="button game-button">Играть!</button>
                 </div>
                 <div class="game__img">
-                    <img src="img/gamebig1.jpeg" alt="game 1">
+                    <img 
+                    srcset="img/game1.jpeg 378w, img/gamebig1.jpeg 600w"
+                    sizes="(max-width:600px) 378px, 600px"
+                    src="img/gamebig1.jpeg"
+                    alt="game 1">
                 </div>
             </div>
                 
             <div class="game__cart">
-                    <img src="img/gamebig2.jpeg" alt="game2">
+                <div class="game__img">
+                    <img 
+                    srcset="img/game2.jpeg 378w, img/gamebig2.jpeg 600w"
+                    sizes="(max-width:600px) 378px, 600px"
+                    src="img/gamebig2.jpeg"
+                    alt="game 2">
+                </div>
                 <div class="game__info" id="game2">
                     <h3 class="game__info-title">Простая арифметика</h3>
                     <p class="game__info-text game__info-text_width">Попробуй решить простые арифметические задачи.</p>
@@ -122,13 +118,21 @@
                     <button class="button game-button">Играть!</button>
                 </div>
                 <div class="game__img">
-                    <img src="img/gamebig3.jpeg" alt="game3">
+                    <img 
+                    srcset="img/game3.jpeg 378w, img/gamebig3.jpeg 600w"
+                    sizes="(max-width:600px) 378px, 600px"
+                    src="img/gamebig3.jpeg"
+                    alt="game3">
                 </div>
             </div>
 
             <div class="game__cart">
                 <div class="game__img">
-                    <img src="img/gamebig4.jpeg" alt="game4">
+                    <img 
+                    srcset="img/game4.jpeg 378w, img/gamebig4.jpeg 600w"
+                    sizes="(max-width:600px) 378px, 600px"
+                    src="img/gamebig4.jpeg"
+                    alt="game 4">
                 </div>
                 <div class="game__info" id="game4">
                     <h3 class="game__info-title game__info-title_normal">Камень, ножницы, бумага</h3>
@@ -144,13 +148,21 @@
                     <button class="button game-button">Играть!</button>
                 </div>
                 <div class="game__img">
-                    <img src="img/gamebig5.jpeg" alt="game5">
+                    <img 
+                    srcset="img/game5.jpeg 378w, img/gamebig5.jpeg 600w"
+                    sizes="(max-width:600px) 378px, 600px"
+                    src="img/gamebig5.jpeg"
+                    alt="game 5">
                 </div>
             </div>
 
             <div class="game__cart">
                 <div class="game__img">
-                    <img src="img/gamebig6.jpeg" alt="game6">
+                    <img 
+                    srcset="img/game6.jpeg 378w, img/gamebig6.jpeg 600w"
+                    sizes="(max-width:600px) 378px, 600px"
+                    src="img/gamebig6.jpeg"
+                    alt="game 6">
                 </div>
                 <div class="game__info" id="game6">
                     <h3 class="game__info-title game__info-title_normal">Генератор случайных цветов</h3>

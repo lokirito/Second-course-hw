@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  padding-top: 196px;
+  padding-bottom: 156px;
+  background: url(img/sidestar.svg) top right no-repeat,
+              url(img/starempty.svg) 156px 69px no-repeat,
+              url(img/staremptybig.svg) 1013px 568px no-repeat,
+              url(img/stargreen.svg) 948px 538px no-repeat,
+              url(img/stargreenbig.svg) 63px 94px no-repeat,
+              url(img/topback.jpeg);
+
+    &__title {
+        color: rgb(32, 32, 39);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        max-width: 768px;
+    }
+    &__text {
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 24px;
+        padding-bottom: 64px;
+        max-width: 720px;
+    }
+}
+
+.button {
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  padding: 18px 68px;
+  margin-top: 36px;
+
+  &:hover {
+  background: #fff;
+  color: #000;
+}
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  padding-bottom: 24px;
+  z-index: 0;
+}
+
+.text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 720px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+  box-sizing: border-box;
+  overflow: hidden;
+
+    &:nth-child(4), &:nth-child(6) {
+        height: 540px;
+        margin-top: -45px;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+    &__text {
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        padding: 8px 16px 10px 16px;
+    }
+    &__title {
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        max-width: 306px;
+    }
+    &-box {
+    box-sizing: border-box;
+    padding-top: 92px;
+    padding-bottom: 52px;
+    background: url(img/star.svg) 40px 822px no-repeat,
+                url(img/starsmall.svg) 25px 770px no-repeat,
+                url(img/starbig.svg) 982px 100px no-repeat,
+                url(img/blackback.jpg);
+
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 32px;
+            padding-top: 64px;
+        }
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 32px 32px 36px 32px;
+            margin-top: auto;
+        }
+    }
+}
+
+.game {
+  padding-top: 46px;
+  padding-bottom: 144px;
+  background: url(img/startopbig.svg) 1340px 126px no-repeat,
+              url(img/startop.svg) 1297px 93px no-repeat,
+              url(img/starbottombig.svg) 1339px 3346px no-repeat,
+              url(img/starbottom.svg) 1269px 3394px no-repeat,
+              url(img/blackback.jpg);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    &__cart {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    &__info {
+        width: 100%;
+        padding: 48px;
+
+        &-title {
+            color: rgb(32, 32, 39);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            max-width: 459px;
+            padding-bottom: 24px;
+        }
+        &-text {
+            color: rgb(32, 32, 39);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+
+            &_width {
+                max-width: 423px;
+            }
+        }
+    }
+}
+
+.footer {
+  background: rgb(189, 237, 53);
+  padding: 60px;
+
+  &__text {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    }
+}
+
+@import 'mobile';
