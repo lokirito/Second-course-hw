@@ -1,45 +1,53 @@
-let a = 10;
-alert (a);
-a = 20;
-alert (a);
-
-const firstIphone = 2007;
-alert (firstIphone);
-
-const creatorOfTheJSLanguage = "Brendan Eich";
-alert (creatorOfTheJSLanguage);
-
-let y = 10;
-let x = 2;
-alert (y + x);
-alert (y - x);
-alert (y * x);
-alert (y / x);
-    
-let result = 2 ** 5;
-alert (result);
-
-let A = 9;
-let B = 2;
-alert (A%B);
-
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num ++;
-num --;
-alert (num);
-    
-let age = prompt ("Сколько вам лет?");
-alert (age);
-
-const user = {
-    name: 'Bob',
-    age: 38,
-    isAdmin: true
+let password = 'пароль';
+let userPassword = prompt('Введите пароль');
+if (userPassword === password) {
+    alert('Пароль введен верно');
+} else {
+    alert('Пароль введен неверно');
 }
 
-let userName = prompt ("Как Вас зовут?");
-alert (`Привет, ${userName}!`);
+let c = 2;
+if (c >= 0 && c <= 10) {
+    alert('Верно');
+} else {
+    alert('Неверно');
+}
+
+let d = 120;
+let e = 80;
+if (c >= 100 || d >= 10) {
+    alert('Верно');
+} else {
+    alert('Неверно');
+}
+
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
+
+let monthNumber = 12;
+switch (monthNumber) {
+    case 1:
+    case 2:
+    case 12:
+        alert('Зима');
+        break;
+    case 3:
+    case 4:
+    case 5:
+        alert('Весна');
+        break;
+    case 6:
+    case 7:
+    case 8:
+        alert('Лето');
+        break;
+    case 9:
+    case 10:
+    case 11:
+        alert('Осень');
+        break;
+    default:
+        alert('Неверно');
+        break;
+}
