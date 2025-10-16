@@ -1,39 +1,108 @@
- for (let i = 0; i < 2; i++) {
-    console.log('Привет');
+// Задание 1
+
+let maxNumber = (a, b) => {
+    if (a > b) {
+        return a;
+    } else if (b > a) {
+        return b;
+    } else {
+        return console.log(`Значения равны`);
+    }
 }
 
-let a = 1;
-do {
-    console.log(a);
-    a++;
-} while(a <= 5);
+console.log(maxNumber(8, 4));
+console.log(maxNumber(36, 54));
+maxNumber(6, 6);
 
-let b = 7;
-while (b <= 22) {
-    console.log(b);
-    b++;
-}
+// Задание 2
 
-const obj = {
-    Коля: '200',
-    Вася: '300',
-    Петя: '400'
-}
-for (let key in obj) {
-    console.log(`Имя сотрудника ${key} зарплата ${obj[key]} долларов`);
+let parity = number => {
+    if (number % 2 === 0) {
+        console.log(`Число четное`);
+    } else {
+        console.log(`Число нечетное`);
+    }
 }
 
-let n = 1000;
-let num = 0;
-while (n >= 50) {
-    n /= 2;
-    console.log(n);
-    num++;
-}
-console.log(`Количество циклов: ${num}`);
+parity(6);
+parity(13);
 
-let dayFriday = 1;
-let allDay = 31;
-for (let i = dayFriday; i <= allDay; i += 7) {
-    console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчёт.`);
+// Задание 3
+
+function outputSquare(digit) {
+    let result = digit ** 2;
+    console.log(`Квадрат числа ${digit} равен ${result}`);
 }
+
+outputSquare(7);
+
+let returnSquare = numeral => numeral ** 2;
+
+console.log(returnSquare(4));
+
+// Задание 4
+
+function helloMessage(userAnswer) {
+    let hello = prompt(userAnswer);
+    if (hello >= 0 && hello <= 12) {
+        console.log(`Привет, друг!`);
+    } else if (hello > 13) {
+        console.log(`Добро пожаловать!`);
+    } else {
+        console.log(`Вы ввели неправильное значение`);
+    }
+}
+
+helloMessage (`Сколько вам лет?`);
+
+// Задание 5
+
+let isN = (first, second) => 
+    (isNaN(first) || isNaN(second)) 
+    ? (console.log(`Одно или оба значения не являются числом`), undefined)
+    : first * second;
+
+console.log(isN (5, 7));
+console.log(isN (`ва`, 7));
+console.log(isN (`dg`, `ымы`));
+
+// Задание 6
+
+function parityNumber(question) {
+    let n = Number(prompt(question));
+    if (n = isNaN) {
+        console.log(`Переданный параметр не является числом`);
+    } else {
+        final = n ** 2;
+        console.log(`${n} в кубе равняется ${final}`);
+    }
+}
+
+parityNumber (`Введите любое число`);
+
+// Задание 7
+
+function getRectangleArea() {
+    return this.radius ** 2 * 3.14;
+}
+
+function getRectanglePerimeter() {
+    return this.radius * 2 * 3.14;
+}
+
+const circle1 = {
+    radius: 4,
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+}
+
+const circle2 = {
+    radius: 7,
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+}
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
