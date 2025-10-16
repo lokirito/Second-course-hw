@@ -1,53 +1,39 @@
-let password = 'пароль';
-let userPassword = prompt('Введите пароль');
-if (userPassword === password) {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен неверно');
+ for (let i = 0; i < 2; i++) {
+    console.log('Привет');
 }
 
-let c = 2;
-if (c >= 0 && c <= 10) {
-    alert('Верно');
-} else {
-    alert('Неверно');
+let a = 1;
+do {
+    console.log(a);
+    a++;
+} while(a <= 5);
+
+let b = 7;
+while (b <= 22) {
+    console.log(b);
+    b++;
 }
 
-let d = 120;
-let e = 80;
-if (c >= 100 || d >= 10) {
-    alert('Верно');
-} else {
-    alert('Неверно');
+const obj = {
+    Коля: '200',
+    Вася: '300',
+    Петя: '400'
+}
+for (let key in obj) {
+    console.log(`Имя сотрудника ${key} зарплата ${obj[key]} долларов`);
 }
 
-let a = '2';
-let b = '3';
-alert(Number(a) + Number(b));
+let n = 1000;
+let num = 0;
+while (n >= 50) {
+    n /= 2;
+    console.log(n);
+    num++;
+}
+console.log(`Количество циклов: ${num}`);
 
-let monthNumber = 12;
-switch (monthNumber) {
-    case 1:
-    case 2:
-    case 12:
-        alert('Зима');
-        break;
-    case 3:
-    case 4:
-    case 5:
-        alert('Весна');
-        break;
-    case 6:
-    case 7:
-    case 8:
-        alert('Лето');
-        break;
-    case 9:
-    case 10:
-    case 11:
-        alert('Осень');
-        break;
-    default:
-        alert('Неверно');
-        break;
+let dayFriday = 1;
+let allDay = 31;
+for (let i = dayFriday; i <= allDay; i += 7) {
+    console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчёт.`);
 }
