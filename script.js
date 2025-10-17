@@ -1,18 +1,18 @@
 // Задание 1
 
-let maxNumber = (a, b) => {
-    if (a > b) {
+let minNumber = (a, b) => {
+    if (a < b) {
         return a;
-    } else if (b > a) {
+    } else if (a > b) {
         return b;
     } else {
         return console.log(`Значения равны`);
     }
 }
 
-console.log(maxNumber(8, 4));
-console.log(maxNumber(36, 54));
-maxNumber(6, 6);
+console.log(minNumber(8, 4));
+console.log(minNumber(36, 54));
+minNumber(6, 6);
 
 // Задание 2
 
@@ -70,10 +70,10 @@ console.log(isN (`dg`, `ымы`));
 
 function parityNumber(question) {
     let n = Number(prompt(question));
-    if (n = isNaN) {
+    if (isNaN(n)) {
         console.log(`Переданный параметр не является числом`);
     } else {
-        final = n ** 2;
+        final = n ** 3;
         console.log(`${n} в кубе равняется ${final}`);
     }
 }
