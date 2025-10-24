@@ -18,7 +18,7 @@ mass.forEach ((el,index) => {
 // Задание 3
 
 const m = [1, 3, 5, 10, 20];
-let joinedM = m.join('');
+let joinedM = m.join(' ');
 console.log(joinedM);
 
 // Задание 4
@@ -62,7 +62,6 @@ if (numbers.includes(userNumber)) {
 
 let text = 'abcdef';
 text = text.split('');
-console.log(text);
 text.reverse();
 text = text.join('');
 console.log(text);
@@ -142,7 +141,7 @@ function randomNumber() {
 }
 const arrr = [];
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 6; i++) {
     arrr.push(randomNumber());
 }
 
